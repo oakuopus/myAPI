@@ -1,0 +1,257 @@
+[
+  {
+    "id": 1,
+    "model": "Toyota Corolla",
+    "year": 2020
+  },
+  {
+    "id": 2,
+    "model": "Honda Civic",
+    "year": 2021
+  },
+  {
+    "id": 3,
+    "model": "Ford Mustang",
+    "year": 2019
+  },
+  {
+    "id": 4,
+    "model": "Chevrolet Camaro",
+    "year": 2022
+  },
+  {
+    "id": 5,
+    "model": "Tesla Model S",
+    "year": 2023
+  },
+  {
+    "id": 6,
+    "model": "BMW 3 Series",
+    "year": 2020
+  },
+  {
+    "id": 7,
+    "model": "Audi A4",
+    "year": 2021
+  },
+  {
+    "id": 8,
+    "model": "Mercedes-Benz C-Class",
+    "year": 2022
+  },
+  {
+    "id": 9,
+    "model": "Volkswagen Golf",
+    "year": 2023
+  },
+  {
+    "id": 10,
+    "model": "Mazda CX-5",
+    "year": 2020
+  },
+  {
+    "id": 11,
+    "model": "Subaru Impreza",
+    "year": 2021
+  },
+  {
+    "id": 12,
+    "model": "Nissan Altima",
+    "year": 2022
+  },
+  {
+    "id": 13,
+    "model": "Hyundai Sonata",
+    "year": 2023
+  },
+  {
+    "id": 14,
+    "model": "Kia Optima",
+    "year": 2020
+  },
+  {
+    "id": 15,
+    "model": "Dodge Charger",
+    "year": 2021
+  },
+  {
+    "id": 16,
+    "model": "Jeep Grand Cherokee",
+    "year": 2022
+  },
+  {
+    "id": 17,
+    "model": "Lexus ES",
+    "year": 2023
+  },
+  {
+    "id": 18,
+    "model": "Porsche 911",
+    "year": 2021
+  },
+  {
+    "id": 19,
+    "model": "Ferrari Roma",
+    "year": 2023
+  },
+  {
+    "id": 20,
+    "model": "Lamborghini Huracán",
+    "year": 2022
+  },
+  {
+    "id": 21,
+    "model": "Rolls-Royce Phantom",
+    "year": 2021
+  },
+  {
+    "id": 22,
+    "model": "McLaren 720S",
+    "year": 2022
+  },
+  {
+    "id": 23,
+    "model": "Bugatti Chiron",
+    "year": 2023
+  },
+  {
+    "id": 24,
+    "model": "Ford F-150",
+    "year": 2021
+  },
+  {
+    "id": 25,
+    "model": "Ram 1500",
+    "year": 2020
+  },
+  {
+    "id": 26,
+    "model": "Chevrolet Silverado",
+    "year": 2021
+  },
+  {
+    "id": 27,
+    "model": "GMC Sierra",
+    "year": 2022
+  },
+  {
+    "id": 28,
+    "model": "Honda CR-V",
+    "year": 2023
+  },
+  {
+    "id": 29,
+    "model": "Toyota RAV4",
+    "year": 2020
+  },
+  {
+    "id": 30,
+    "model": "Ford Explorer",
+    "year": 2021
+  },
+  {
+    "id": 31,
+    "model": "BMW X5",
+    "year": 2022
+  },
+  {
+    "id": 32,
+    "model": "Mercedes-Benz GLE",
+    "year": 2023
+  },
+  {
+    "id": 33,
+    "model": "Audi Q7",
+    "year": 2021
+  },
+  {
+    "id": 34,
+    "model": "Lexus RX",
+    "year": 2020
+  },
+  {
+    "id": 35,
+    "model": "Volvo XC90",
+    "year": 2022
+  },
+  {
+    "id": 36,
+    "model": "Land Rover Defender",
+    "year": 2023
+  },
+  {
+    "id": 37,
+    "model": "Jaguar F-Pace",
+    "year": 2020
+  },
+  {
+    "id": 38,
+    "model": "Cadillac Escalade",
+    "year": 2021
+  },
+  {
+    "id": 39,
+    "model": "Lincoln Navigator",
+    "year": 2022
+  },
+  {
+    "id": 40,
+    "model": "Bentley Bentayga",
+    "year": 2023
+  },
+  {
+    "id": 41,
+    "model": "Maserati Levante",
+    "year": 2021
+  },
+  {
+    "id": 42,
+    "model": "Hyundai Tucson",
+    "year": 2022
+  },
+  {
+    "id": 43,
+    "model": "Kia Sorento",
+    "year": 2023
+  },
+  {
+    "id": 44,
+    "model": "Subaru Outback",
+    "year": 2020
+  },
+  {
+    "id": 45,
+    "model": "Toyota Highlander",
+    "year": 2021
+  },
+  {
+    "id": 46,
+    "model": "Nissan Rogue",
+    "year": 2022
+  },
+  {
+    "id": 47,
+    "model": "Chevrolet Tahoe",
+    "year": 2023
+  },
+  {
+    "id": 48,
+    "model": "Jeep Wrangler",
+    "year": 2021
+  },
+  {
+    "id": 49,
+    "model": "Ford Bronco",
+    "year": 2022
+  },
+  {
+    "id": 50,
+    "model": "GMC Yukon",
+    "year": 2023
+  },
+  {
+    "id": 51,
+    "model": "Ferrari 296 GTO",
+    "year": "2022"
+  }
+]

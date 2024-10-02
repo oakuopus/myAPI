@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin API</title>
+</head>
+<body>
+    <h1>ADMINISTRATOR PAGE</h1>
+    <div class="form">
+        <form action="/entry" method="POST">
+            <fieldset>
+                <input type="radio" name="vehicle" value="Car">
+                <label for="Car">Car</label><br>
+                <input type="radio" name="vehicle" value="Motorcycle">
+                <label for="Motorcycle">Motorcycle</label><br>
+                <legend>Add New Entry</legend>
+                <input type="text" name="model" placeholder="Model" required>
+                <input type="number" name="year" placeholder="2024" required>
+                <button type="submit">Add Entry</button>
+            </fieldset> 
+        </form>
+    </div>
+</body>
+</html>
