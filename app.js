@@ -31,12 +31,15 @@ const addEntry = (entry, file) => {
     fs.writeFileSync(`./db/data${file}.json`, JSON.stringify(append, null, 2));
 }
 const saveData = (data, file) => {
-    console.log(data, file)
     fs.writeFileSync(`./db/data${file}.json`, JSON.stringify(data, null, 2))
 }
 
 app.get("/admin", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "public/admin.html"))
+    if(req.query.password == "admin"){
+        res.sendFile(path.resolve(__dirname, "public/admin.html"))
+    }else{
+        res.status(401).send("Unauthorized");
+    }
 })
 
 app.get('/api/data/cars', (req, res) => {
@@ -67,29 +70,47 @@ app.get("/api/data/motorcycles/:dataID", (req, res) => {
 
 app.post('/entry', (req, res) => {
     var file = req.body.vehicle == "Car" ? "1" : "2";
-    if(file == "1"){
-        const newEntry = {
-            id: getData1().length + 1,
-            model: req.body.model,
-            year: req.body.year,
+        if(file == "1"){
+            const newEntry = {
+                id: getData1()[-1].id + 1,
+                model: req.body.model,
+                year: req.body.year,
+            }
+            addEntry(newEntry, "1")
+        }else if(file == "2")  {
+            const newEntry = {
+                id: getData2()[-1].id + 1,
+                model: req.body.model,
+                year: req.body.year,
+            }
+            addEntry(newEntry, "2")
+        }else{
+            res.status(401).send("Invalid")
         }
-        addEntry(newEntry, "1")
-    }else if(file == "2")  {
-        const newEntry = {
-            id: getData2().length + 1,
-            model: req.body.model,
-            year: req.body.year,
-        }
-        addEntry(newEntry, "2")
-    }else{
-        res.status(400).send("Invalid vehicle type")
-    }
-    res.redirect("/admin")
+    res.redirect("/admin?password=admin")
 })
 
 app.get("/admin/edit/cars/:id", (req, res) => {
     var edit = getData1().find(edit => edit.id == Number(req.params.id))
-    res.render("edit", {edit})
+    if(!req.params.id){
+        res.status(404).send("ID not found")
+    }
+    if(req.query.password == "admin") {
+        res.render("edit", {edit})
+    }else{
+        res.status(401).send("Unauthorized")
+    }
+})
+app.get("/admin/edit/motorcycles/:id", (req, res) => {
+    var edit = getData2().find(edit => edit.id == Number(req.params.id))
+    if(!req.params.id){
+        res.status(404).send("ID not found")
+    }
+    if(req.query.password == "admin") {
+        res.render("edit", {edit})
+    }else{
+        res.status(401).send("Unauthorized")
+    }
 })
 
 app.post("/admin/:id", (req, res) =>{
@@ -104,12 +125,22 @@ app.post("/admin/:id", (req, res) =>{
     }else{
         saveData(edit, "2")
     }
-    res.redirect("/admin")
+    res.redirect("/admin?password=admin")
 })
 
-app.post("/", (req, res) => {
-    console.log(req.url)
-    res.status(404).send("lil bro stop posting on the index")
+app.post("/admin/edit/cars/:id/delete", (req, res) => {
+    let data = getData1()
+    console.log(req.params.id)
+    data = data.filter(item => item.id != req.params.id)
+    saveData(data, "1")
+    res.redirect("/admin?password=admin")
+})
+
+app.post("/admin/edit/motorcycles/:id/delete", (req, res) => {
+    let data = getData2()
+    data = data.filter(del => del.id != req.params.id)
+    saveData(data, "2")
+    res.redirect("/admin?password=admin")
 })
 
 app.get("*", (req, res) => {

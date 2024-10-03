@@ -22,6 +22,12 @@
 
             <button type="submit">Update Task</button>
         </form>
+        <form action="/admin/edit/cars/<%= edit.id %>/delete" method="POST">
+            <button type="submit">Delete Car</button>
+        </form>
+        <form action="/admin/edit/motorcycles/<%= edit.id %>/delete" method="POST">
+            <button type="submit">Delete Motorcycle</button>
+        </form>
     </fieldset>
 </body>
 </html>
