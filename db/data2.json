@@ -1,257 +1,252 @@
 [
   {
     "id": 1,
-    "model": "Harley-Davidson Street Glide",
-    "year": 2021
+    "model": "Toyota Corolla",
+    "year": "1000"
   },
   {
     "id": 2,
-    "model": "Ducati Panigale V4",
-    "year": 2022
-  },
-  {
-    "id": 3,
-    "model": "Yamaha YZF-R1",
-    "year": 2020
-  },
-  {
-    "id": 4,
-    "model": "Honda CBR1000RR-R",
+    "model": "Honda Civic",
     "year": 2021
   },
   {
+    "id": 3,
+    "model": "Ford Mustang",
+    "year": 2019
+  },
+  {
+    "id": 4,
+    "model": "Chevrolet Camaro",
+    "year": 2022
+  },
+  {
     "id": 5,
-    "model": "Kawasaki Ninja H2",
+    "model": "Tesla Model S",
     "year": 2023
   },
   {
     "id": 6,
-    "model": "BMW S1000RR",
-    "year": 2022
-  },
-  {
-    "id": 7,
-    "model": "Suzuki GSX-R1000",
+    "model": "BMW 3 Series",
     "year": 2020
   },
   {
-    "id": 8,
-    "model": "Triumph Bonneville T120",
+    "id": 7,
+    "model": "Audi A4",
     "year": 2021
   },
   {
+    "id": 8,
+    "model": "Mercedes-Benz C-Class",
+    "year": 2022
+  },
+  {
     "id": 9,
-    "model": "KTM 1290 Super Duke R",
+    "model": "Volkswagen Golf",
     "year": 2023
   },
   {
     "id": 10,
-    "model": "Indian Scout Bobber",
-    "year": 2022
+    "model": "Mazda CX-5",
+    "year": 2020
   },
   {
     "id": 11,
-    "model": "Aprilia RSV4",
+    "model": "Subaru Impreza",
     "year": 2021
   },
   {
     "id": 12,
-    "model": "MV Agusta Brutale 1000",
-    "year": 2023
+    "model": "Nissan Altima",
+    "year": 2022
   },
   {
     "id": 13,
-    "model": "Yamaha MT-09",
-    "year": 2020
-  },
-  {
-    "id": 14,
-    "model": "Honda Africa Twin",
-    "year": 2021
-  },
-  {
-    "id": 15,
-    "model": "Kawasaki Z900",
-    "year": 2022
-  },
-  {
-    "id": 16,
-    "model": "Suzuki V-Strom 1050",
+    "model": "Hyundai Sonata",
     "year": 2023
   },
   {
-    "id": 17,
-    "model": "Harley-Davidson Iron 883",
+    "id": 14,
+    "model": "Kia Optima",
+    "year": 2020
+  },
+  {
+    "id": 15,
+    "model": "Dodge Charger",
     "year": 2021
   },
   {
-    "id": 18,
-    "model": "Ducati Multistrada V4",
+    "id": 16,
+    "model": "Jeep Grand Cherokee",
     "year": 2022
   },
   {
-    "id": 19,
-    "model": "BMW R1250GS",
-    "year": 2020
+    "id": 17,
+    "model": "Lexus ES",
+    "year": 2023
   },
   {
-    "id": 20,
-    "model": "Triumph Tiger 900",
+    "id": 18,
+    "model": "Porsche 911",
     "year": 2021
   },
   {
+    "id": 19,
+    "model": "Ferrari Roma",
+    "year": 2023
+  },
+  {
+    "id": 20,
+    "model": "Lamborghini Huracán",
+    "year": 2022
+  },
+  {
     "id": 21,
-    "model": "KTM 790 Adventure",
-    "year": 2020
+    "model": "Rolls-Royce Phantom",
+    "year": 2021
   },
   {
     "id": 22,
-    "model": "Indian Chief Dark Horse",
+    "model": "McLaren 720S",
     "year": 2022
   },
   {
     "id": 23,
-    "model": "Royal Enfield Himalayan",
+    "model": "Bugatti Chiron",
     "year": 2023
   },
   {
     "id": 24,
-    "model": "Yamaha Tenere 700",
+    "model": "Ford F-150",
     "year": 2021
   },
   {
     "id": 25,
-    "model": "Ducati Diavel 1260",
-    "year": 2022
-  },
-  {
-    "id": 26,
-    "model": "Suzuki Hayabusa",
+    "model": "Ram 1500",
     "year": 2020
   },
   {
-    "id": 27,
-    "model": "BMW K1600GT",
+    "id": 26,
+    "model": "Chevrolet Silverado",
     "year": 2021
   },
   {
+    "id": 27,
+    "model": "GMC Sierra",
+    "year": 2022
+  },
+  {
     "id": 28,
-    "model": "Harley-Davidson Fat Boy",
+    "model": "Honda CR-V",
     "year": 2023
   },
   {
     "id": 29,
-    "model": "Kawasaki Vulcan S",
-    "year": 2022
+    "model": "Toyota RAV4",
+    "year": 2020
   },
   {
     "id": 30,
-    "model": "Honda Rebel 500",
+    "model": "Ford Explorer",
     "year": 2021
   },
   {
     "id": 31,
-    "model": "Yamaha Bolt R-Spec",
-    "year": 2020
+    "model": "BMW X5",
+    "year": 2022
   },
   {
     "id": 32,
-    "model": "Triumph Rocket 3",
+    "model": "Mercedes-Benz GLE",
     "year": 2023
   },
   {
     "id": 33,
-    "model": "Suzuki SV650",
-    "year": 2022
-  },
-  {
-    "id": 34,
-    "model": "KTM 390 Duke",
+    "model": "Audi Q7",
     "year": 2021
   },
   {
-    "id": 35,
-    "model": "Indian FTR 1200",
+    "id": 34,
+    "model": "Lexus RX",
     "year": 2020
   },
   {
+    "id": 35,
+    "model": "Volvo XC90",
+    "year": 2022
+  },
+  {
     "id": 36,
-    "model": "BMW R NineT",
+    "model": "Land Rover Defender",
     "year": 2023
   },
   {
     "id": 37,
-    "model": "Ducati Scrambler Icon",
-    "year": 2021
-  },
-  {
-    "id": 38,
-    "model": "Harley-Davidson Road King",
-    "year": 2022
-  },
-  {
-    "id": 39,
-    "model": "Kawasaki Versys 650",
-    "year": 2023
-  },
-  {
-    "id": 40,
-    "model": "Honda Gold Wing",
-    "year": 2021
-  },
-  {
-    "id": 41,
-    "model": "Yamaha XSR900",
+    "model": "Jaguar F-Pace",
     "year": 2020
   },
   {
+    "id": 38,
+    "model": "Cadillac Escalade",
+    "year": 2021
+  },
+  {
+    "id": 39,
+    "model": "Lincoln Navigator",
+    "year": 2022
+  },
+  {
+    "id": 40,
+    "model": "Bentley Bentayga",
+    "year": 2023
+  },
+  {
+    "id": 41,
+    "model": "Maserati Levante",
+    "year": 2021
+  },
+  {
     "id": 42,
-    "model": "Suzuki DR650S",
+    "model": "Hyundai Tucson",
     "year": 2022
   },
   {
     "id": 43,
-    "model": "Triumph Speed Twin",
+    "model": "Kia Sorento",
     "year": 2023
   },
   {
     "id": 44,
-    "model": "KTM 250 SX-F",
-    "year": 2021
-  },
-  {
-    "id": 45,
-    "model": "Ducati Monster 1200",
-    "year": 2022
-  },
-  {
-    "id": 46,
-    "model": "BMW F850GS",
+    "model": "Subaru Outback",
     "year": 2020
   },
   {
+    "id": 45,
+    "model": "Toyota Highlander",
+    "year": 2021
+  },
+  {
+    "id": 46,
+    "model": "Nissan Rogue",
+    "year": 2022
+  },
+  {
     "id": 47,
-    "model": "Harley-Davidson Sportster S",
+    "model": "Chevrolet Tahoe",
     "year": 2023
   },
   {
     "id": 48,
-    "model": "Honda CRF450R",
-    "year": 2022
-  },
-  {
-    "id": 49,
-    "model": "Yamaha R6",
+    "model": "Jeep Wrangler",
     "year": 2021
   },
   {
-    "id": 50,
-    "model": "Suzuki GSX-S750",
-    "year": 2020
+    "id": 49,
+    "model": "Ford Bronco",
+    "year": 2022
   },
   {
-    "id": 51,
-    "model": "CBR 600RR",
-    "year": "2022"
+    "id": 50,
+    "model": "GMC Yukon",
+    "year": 2023
   }
 ]

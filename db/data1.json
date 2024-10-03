@@ -2,7 +2,7 @@
   {
     "id": 1,
     "model": "Toyota Corolla",
-    "year": 2020
+    "year": "2017"
   },
   {
     "id": 2,
@@ -248,10 +248,5 @@
     "id": 50,
     "model": "GMC Yukon",
     "year": 2023
-  },
-  {
-    "id": 51,
-    "model": "Ferrari 296 GTO",
-    "year": "2022"
   }
 ]

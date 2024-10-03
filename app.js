@@ -6,6 +6,8 @@ const bodyParser = require("body-parser")
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json())
 app.use(express.static(path.join(__dirname, "public")))
+app.set("view engine", "ejs")
+app.set("views", path.join(__dirname, "views"))
 
 const getData1 = () => {
     return JSON.parse(fs.readFileSync(path.join(__dirname, "db", "data1.json"), "utf-8"))
@@ -13,6 +15,7 @@ const getData1 = () => {
 const getData2 = () => {
     return JSON.parse(fs.readFileSync(path.join(__dirname, "db", "data2.json"), "utf-8"))
 }
+
 app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "public/index.html"))
 })
@@ -23,10 +26,13 @@ app.get('/api/data', (req, res) => {
 })
 
 const addEntry = (entry, file) => {
-    console.log(entry, file)
     const append = (file == "1") ? getData1() : getData2();
     append.push(entry)
     fs.writeFileSync(`./db/data${file}.json`, JSON.stringify(append, null, 2));
+}
+const saveData = (data, file) => {
+    console.log(data, file)
+    fs.writeFileSync(`./db/data${file}.json`, JSON.stringify(data, null, 2))
 }
 
 app.get("/admin", (req, res) => {
@@ -81,9 +87,24 @@ app.post('/entry', (req, res) => {
     res.redirect("/admin")
 })
 
-app.put("/admin/edit/cars/:dataID", (req, res) => {
-    var edit = getData1().find(edit => edit.id == Number(req.params.dataID))
-    res.json(edit)
+app.get("/admin/edit/cars/:id", (req, res) => {
+    var edit = getData1().find(edit => edit.id == Number(req.params.id))
+    res.render("edit", {edit})
+})
+
+app.post("/admin/:id", (req, res) =>{
+    var edit = getData1()
+    var file = req.body.vehicle == "Car" ? "1" : "2";
+    console.log(file)
+    var editIndex = edit.findIndex(edit => edit.id == req.params.id)
+    edit[editIndex].model = req.body.model
+    edit[editIndex].year = req.body.year
+    if(file == "1"){
+        saveData(edit, "1")
+    }else{
+        saveData(edit, "2")
+    }
+    res.redirect("/admin")
 })
 
 app.post("/", (req, res) => {
