@@ -4,23 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor</title>
+    <style>
+        fieldset {
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+    </style>
 </head>
 <body>
     <fieldset>
         <legend>Edit</legend>
         <form action="/admin/<%= edit.id %>" class="edit-form" method="POST">
-            <input type="radio" name="vehicle" value="Car">
-            <label for="Car">Car</label><br>
-            <input type="radio" name="vehicle" value="Motorcycle">
-            <label for="Motorcycle">Motorcycle</label><br>
-
+            <div id="type">
+                <input type="radio" name="vehicle" value="Car">
+                <label for="Car">Car</label><br>
+                <input type="radio" name="vehicle" value="Motorcycle">
+                <label for="Motorcycle">Motorcycle</label><br>
+            </div>
             <label for="name">Model:</label>
             <input type="text" id="model" name="model" value="<%= edit.model %>" required>
 
             <label for="year">Year:</label>
             <input type="year" id="year" name="year" value="<%= edit.year %>"required>
 
-            <button type="submit">Update Task</button>
+            <button type="submit">Update Vehicle</button>
         </form>
         <form action="/admin/edit/cars/<%= edit.id %>/delete" method="POST">
             <button type="submit">Delete Car</button>

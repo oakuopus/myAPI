@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+a{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 20%;
+    border: dashed white 2px;
+    width: 5rem;
+    margin: auto;
+    padding: 6px;
+}
